@@ -1,0 +1,23 @@
+<ion-content>
+  <img [ngClass]="{'dogBg': true}" src="../../assets/dog.jpg" alt="">
+  <img [ngClass]="{'auauLogo': true}"src="../../assets/AuAuIntro.png" alt="">
+  <ion-grid>
+    <ion-row class="ion-align-items-center">
+      <ion-col size="12" class="ion-text-center">
+        <ion-button shape="round" (click)="router.navigate(['/insert-login'])" color="auau" [ngClass]="{'btnIniciarSessao': true, 'btnsAction': true}">
+          <span >Iniciar Sessão</span>
+        </ion-button>
+      </ion-col>
+      <ion-col size="12" class="ion-text-center">
+        <ion-button shape="round" color="create-account" [ngClass]="{'btnsAction': true, 'btnEsqueciSenha': true}">
+          <span >Esqueci Minha Senha</span>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer [ngClass]="{'footerLogin': true}">
+  <ion-toolbar class="footerPattern">
+    <ion-title>@auaushop</ion-title>
+  </ion-toolbar>
+</ion-footer>

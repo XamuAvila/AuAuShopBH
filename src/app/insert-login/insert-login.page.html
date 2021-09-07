@@ -1,0 +1,39 @@
+<ion-content>
+  <ion-grid>
+    <ion-row [ngClass]="{'headerRow': true}" class="ion-align-items-center">
+      <ion-col size="12" class="ion-text-center">
+        Iniciar Sessão
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-center">
+      <ion-col size="12" class="ion-text-center">
+        <ion-item [ngClass]="{'inputFields': true}" class="roundedInput loginForm">
+          <ion-input class="inputsLogin" placeholder="Login"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" class="ion-text-center" style="margin-top:5%">
+        <ion-item [ngClass]="{'inputFields': true}" class="roundedInput loginForm">
+          <ion-input class="inputsLogin" type="password" placeholder="Senha"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+        <ion-button (click)="router.navigate(['/main'])" shape="round" color="auau" [ngClass]="{'btnIniciarSessao': true, 'btnsAction': true}">
+          <ion-icon name="finger-print-outline" size="large"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col size="12" class="ion-text-center" style="margin-top: 10%;">
+          <span style="font-size: 26px;">Não consegue fazer Login?</span>
+      </ion-col>
+      <ion-col size="12" class="ion-text-center" style="margin-top: 5%;">
+          <span style="font-size: 26px;">Criar Conta</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer [ngClass]="{'footerLogin': true}">
+  <ion-toolbar class="footerPattern">
+    <ion-title>@auaushop</ion-title>
+  </ion-toolbar>
+</ion-footer>
